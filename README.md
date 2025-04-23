@@ -4,32 +4,32 @@ A simple Telegram bot for a cosmetology studio. It provides information about se
 
 
 Features
- • Responds to the /start command
- • Lists available cosmetology services
- • Accepts user booking requests
- • Clean and beginner-friendly C# implementation using the Telegram.Bot library
+ 1. Responds to the /start command
+ 2. Lists available cosmetology services
+ 3. Accepts user booking requests
+ 4. Clean and beginner-friendly C# implementation using the Telegram.Bot library
 
 
 Technologies
- • C#
- • .NET (https://dotnet.microsoft.com/) 8
- • Telegram.Bot (https://github.com/TelegramBots/Telegram.Bot) v22 (NuGet package)
+ 1. C#
+ 2. .NET (https://dotnet.microsoft.com/) 8
+ 3. Telegram.Bot (https://github.com/TelegramBots/Telegram.Bot) v22 (NuGet package)
 
 
 How It Works
 When the user interacts with the bot, it responds based on the message:
- • /start – welcome message
- • services – shows a list of services and prices
- • booking – asks for preferred date and time for the appointment
- • Any other message – returns a default response
+ 1. /start – welcome message
+ 2. services – shows a list of services and prices
+ 3. booking – asks for preferred date and time for the appointment
+ 4. Any other message – returns a default response
 
 
 Services List
- • Facial cleansing — €50
- • Peeling — €60
- • Massage — €40
- • Lip augmentation — €200
- • Botox — €80
+ Facial cleansing — €50
+ Peeling — €60
+ Massage — €40
+ Lip augmentation — €200
+ Botox — €80
 
 
 Example
@@ -38,11 +38,11 @@ Bot: Hi! I’m a cosmetology bot. Type ‘services’ or ‘booking’.
 User: services
 Bot:
 Available services:
-• Facial cleansing — €50
-• Peeling — €60
-• Massage — €40
-• Lip augmentation — €200
-• Botox — €80
+Facial cleansing — €50
+Peeling — €60
+Massage — €40
+Lip augmentation — €200
+Botox — €80
 User: booking
 Bot: Please tell me your preferred date and time. A specialist will contact you to confirm the appointment.
 
