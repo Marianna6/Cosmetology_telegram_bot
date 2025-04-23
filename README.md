@@ -3,64 +3,119 @@ Cosmetology Telegram Bot
 A simple Telegram bot for a cosmetology studio. It provides information about services and allows users to send booking requests.
 
 
-Features
- 1. Responds to the /start command
- 2. Lists available cosmetology services
- 3. Accepts user booking requests
- 4. Clean and beginner-friendly C# implementation using the Telegram.Bot library
+
+#Features
+ 
+ • Responds to the /start command
+
+ • Lists available cosmetology services
+ 
+ • Accepts user booking requests
+ 
+ • Clean and beginner-friendly C# implementation using the Telegram.Bot library
 
 
-Technologies
- 1. C#
- 2. .NET (https://dotnet.microsoft.com/) 8
- 3. Telegram.Bot (https://github.com/TelegramBots/Telegram.Bot) v22 (NuGet package)
 
 
-How It Works
+#Technologies
+ 
+ • C#
+ 
+ • .NET 8
+ 
+ • Telegram.Bot v22 (NuGet package)
+
+
+
+
+#How It Works
+
 When the user interacts with the bot, it responds based on the message:
- 1. /start – welcome message
- 2. services – shows a list of services and prices
- 3. booking – asks for preferred date and time for the appointment
- 4. Any other message – returns a default response
+ 
+ • /start – welcome message
+ 
+ • services – shows a list of services and prices
+ 
+ • booking – asks for preferred date and time for the appointment
+ 
+ • Any other message – returns a default response
 
 
-Services List
- Facial cleansing — €50
- Peeling — €60
- Massage — €40
- Lip augmentation — €200
- Botox — €80
 
 
-Example
+#Services List
+ 
+ • Facial cleansing — €50
+ 
+ • Peeling — €60
+ 
+ • Massage — €40
+ 
+ • Lip augmentation — €200
+ 
+ • Botox — €80
+
+
+
+
+#Example
+
 User: /start
+
 Bot: Hi! I’m a cosmetology bot. Type ‘services’ or ‘booking’.
+
 User: services
+
 Bot:
+
 Available services:
-Facial cleansing — €50
-Peeling — €60
-Massage — €40
-Lip augmentation — €200
-Botox — €80
+
+• Facial cleansing — €50
+
+• Peeling — €60
+
+• Massage — €40
+
+• Lip augmentation — €200
+
+• Botox — €80
+
+
 User: booking
+
 Bot: Please tell me your preferred date and time. A specialist will contact you to confirm the appointment.
 
 
-Getting Started
+
+
+#Getting Started
  1. Clone the repository:
-git clone https://github.com/Marianna6/Cosmetology_telegram_bot.git
+
+ git clone https://github.com/Marianna6/Cosmetology_telegram_bot.git
+
+
  2. Add your bot token:
-To get the token, you can use BotFather on Telegram.
-Replace the placeholder in Main():
-var botClient = new TelegramBotClient("YOUR_TOKEN");
+ To get the token, you can use BotFather on Telegram.
+ Replace the placeholder in Main() with your token:
+
+ var botClient = new TelegramBotClient("YOUR_TOKEN");
+
+
  3. Run the project in Visual Studio or from terminal:
-dotnet run
+
+ dotnet run
 
 
-Note
+
+
+
+#Note
+
 This bot does not use a database or handle actual appointment bookings — it only collects user input for simulation purposes. It can be expanded later with backend or calendar integration.
 
 
-License
+
+
+#License
+
 MIT — free to use and modify.
